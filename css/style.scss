@@ -1,0 +1,242 @@
+@import "reset";
+@import "color";
+@import "class";
+@import "font";
+
+header {
+  max-width: 100%;
+  height: 108rem;
+  nav {
+    box-sizing: border-box;
+    max-width: 67.5%;
+    padding: 2rem 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 8rem;
+    border-bottom: 1px solid white;
+    div {
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+  .banner-container {
+    box-sizing: border-box;
+    max-width: 67.5%;
+    padding: 4rem 0;
+    margin: 0 auto;
+  }
+  .button-container {
+    padding: 0;
+  }
+  button {
+    max-width: 16rem;
+    height: 6.4rem;
+    border: 1px solid #fff;
+    border-radius: 1.6rem;
+  }
+  .banner-img-container {
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 0px;
+    justify-content: flex-end;
+
+    .banner-img-list {
+      background-image: url("../img/deco.png");
+      max-width: 54rem;
+      height: 18rem;
+    }
+  }
+}
+
+.section-1 {
+  box-sizing: border-box;
+  max-width: 67.5%;
+  height: 94rem;
+  padding: 16rem 0px;
+  margin: 0 auto;
+  .section1-container {
+    height: 17.4rem;
+    justify-content: space-between;
+    h3 {
+      width: 31.94%;
+    }
+    h2 {
+      width: 66.049%;
+    }
+  }
+  .service-container {
+    .service-descr {
+      box-sizing: border-box;
+      width: 32.09%;
+      height: 36.6rem;
+      border: 1px solid #525252;
+      border-radius: 1.6rem;
+      padding: 8rem 4rem;
+      img {
+        max-width: 8rem;
+        height: 8rem;
+      }
+    }
+  }
+  .banner-img-container {
+    padding-top: 18rem;
+    max-width: 35.1rem;
+    height: 11.7rem;
+    .banner-img-list {
+      background-image: url("../img/mobile-deco.png");
+      max-width: 35.1rem;
+      height: 11.7rem;
+    }
+  }
+}
+
+.section-2 {
+  .section2-container {
+    max-width: 67.5%;
+    box-sizing: border-box;
+    padding-bottom: 16rem;
+    margin: 0 auto;
+    height: 93.8rem;
+    border: 1px solid white;
+    .logo-container-1 {
+      height: 4rem;
+      width: 100%;
+      overflow: hidden;
+      img {
+        height: 4rem;
+      }
+    }
+    .logo-container-2 {
+      height: 4rem;
+      width: 100%;
+      overflow: hidden;
+      img {
+        height: 4rem;
+      }
+    }
+  }
+}
+
+// Media query (RWD)
+@media screen and (max-width: 1140px) {
+  header {
+    height: 84rem;
+    .banner-container {
+      max-width: 84%;
+      h2 {
+        font-size: 7.8rem;
+      }
+    }
+    .banner-img-container {
+      padding-top: 10rem;
+      max-width: 35.1rem;
+      height: 11.7rem;
+      .banner-img-list {
+        background-image: url("../img/mobile-deco.png");
+        max-width: 35.1rem;
+        height: 11.7rem;
+      }
+    }
+  }
+  .section-1 {
+    padding: 0rem;
+    height: 160rem;
+    .section1-container {
+      flex-direction: column;
+      font-size: 3.6rem;
+      height: 30rem;
+
+      h3 {
+        width: 100%;
+
+        font-size: 2.8rem;
+        margin-bottom: 4rem;
+      }
+
+      h2 {
+        font-size: 3.6rem;
+        width: 100%;
+      }
+    }
+    .service-container {
+      flex-direction: column;
+
+      .service-descr {
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 80%;
+        padding: 4rem 2rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    height: 81.1rem;
+    nav {
+      align-items: center;
+      max-width: 93.6%;
+      img {
+        height: 2.4rem;
+      }
+    }
+    .banner-container {
+      max-width: 93.6%;
+      h2 {
+        font-size: 4.8rem;
+      }
+    }
+    .banner-img-container {
+      padding-top: 18rem;
+      max-width: 35.1rem;
+      height: 11.7rem;
+      .banner-img-list {
+        background-image: url("../img/mobile-deco.png");
+        max-width: 35.1rem;
+        height: 11.7rem;
+      }
+    }
+  }
+  .section-1 {
+    box-sizing: border-box;
+    max-width: 93.6%;
+    height: 143.2rem;
+    padding: 12rem 0px;
+    .section1-container {
+      flex-direction: column;
+      margin-bottom: 4.8rem;
+      h3 {
+        width: 100%;
+        font-size: 2.4rem;
+        margin-bottom: 2.4rem;
+      }
+      h2 {
+        font-size: 3.2rem;
+        width: 100%;
+        height: 19rem;
+      }
+    }
+    .service-container {
+      flex-direction: column;
+      .service-descr {
+        height: 28.6rem;
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 100%;
+        padding: 4rem 2rem;
+        margin-bottom: 1.2rem;
+        &:nth-of-type(2) {
+          height: 31rem;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
